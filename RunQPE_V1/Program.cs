@@ -69,7 +69,7 @@ namespace RunQPE_V1
                 p.StartInfo.RedirectStandardOutput = true; //由调用程序获取输出信息
                 p.StartInfo.RedirectStandardError = true;  //重定向标准错误输出
                 p.Start();//启动程序
-                p.StandardInput.WriteLine(appDir + @"DownloadCmissData_V1/DownloadCmissData_V1.exe " + dtNow.Year.ToString("d4") + dtNow.Month.ToString("d2") + dtNow.Day.ToString("d2") + dtNow.Hour.ToString("d2") + dtNow.Minute.ToString("d2"));
+                p.StandardInput.WriteLine(appDir + @"DownloadCimissData_V1/DownloadCimissData_V1.exe " + dtNow.Year.ToString("d4") + dtNow.Month.ToString("d2") + dtNow.Day.ToString("d2") + dtNow.Hour.ToString("d2") + dtNow.Minute.ToString("d2"));
                 p.StandardInput.WriteLine(@"exit");
                 p.StandardInput.AutoFlush = true;
                 p.StandardOutput.ReadToEnd();
