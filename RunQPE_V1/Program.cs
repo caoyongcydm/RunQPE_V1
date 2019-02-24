@@ -78,7 +78,7 @@ namespace RunQPE_V1
             }
             catch(Exception ex)
             {
-                //Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
                 Console.WriteLine("Dwonload Surface Wrong");
             }
             ///////////////////////////////////////////////////////////////////////////////
